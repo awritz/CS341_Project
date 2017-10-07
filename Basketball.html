@@ -1,24 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Basketball</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-  </head>
-  <body>
-	<header>
-		<h1>Basketball Volunteer Sign-up Service</h1>
-	</header>
+<!doctype html>
 
-	<section class="login">
-		
-	</section>
-	<section class="sign-up">
-		
-	</section>
-	<section class="website">
-		
-	</section>
-  </body> 
-</html>
+<html lang="en">
+<head>
+    <title>Volunteer Profile Creator</title>
+</head>
+<body onload="main()">
+<h1> Volunteer Profile Creator</h1>
+        Hello!
+        Please enter all of your information below in order to create your new volunteer profile.
+        <br> <br>
+        <form action=" ">
+        <form method="get">
+            <b>Name:</b><br>
+            <input type="text" id="firstName"><br><br>
+             <b>Last Name:</b><br>
+            <input type="text" id="lastName"><br><br>
+            
+            <b>Grade:</b><br>
+            <select id="grade">
+                <option value = "Freshman">Freshman</option>
+                <option value = "Sophomore">Sophomore</option>
+                <option value = "Junior">Junior</option>
+                <option value = "Senior">Senior</option>
+            </select> <br> <br>
+            
+            <b>Birthdate:</b><br>
+            <input type = "date" id = "bday"> <br> <br>
+            
+            <b>School E-mail:</b>
+  <input type="email" name="email"> <br> <br>
+  
+            <b>Which of the following events would you be interested in volunteering for?</b> <br>
+            <input type="radio" name="game1" value="game1"> Game 1<br>
+  <input type="radio" name="game2" value="female"> Game 2<br>
+  <input type="radio" name="game3" value="other"> Game 3 <br> <br>
+  
+            <b>Which of the following activities in that event would you be interested in volunteering for? (Check all that apply)</b> <br>
+            <input type="checkbox" name="likes" id="cheerleader" value="cheerleader"> Cheerleader <br>
+            <input type="checkbox" name="likes" id="mascot" value="mascot"> Mascot <br>
+            <input type="checkbox" name="likes" id="official" value="official"> Official <br>
+            
+            <input type="checkbox" name="likes" id="scorekeeper" value="scorekeeper"> Score Keeper <br>
+            <input type="checkbox" name="likes" id="ticketsale" value="ticketsale"> Ticket Sales <br> <br>
+            <input type = "submit" value = "Submit"/>
+            </form>
+         </body>
+         </html>
