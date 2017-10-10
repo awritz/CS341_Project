@@ -49,7 +49,7 @@ if ($_SESSION['LOGIN'] <> "")
 		<form method="get">
 			<b>Event ID:</b><br>
 			<input type="text" id="eventID"><br><br>
-			<input type = "submit" value = "Submit"/ onclick=>
+			<input type = "submit" value = "Submit" onclick=>
 		</form>
         
 	<!-- Edit Event -->
@@ -57,7 +57,7 @@ if ($_SESSION['LOGIN'] <> "")
 		<form method="get">
 			<b>Event ID:</b><br>
 			<input type="text" id="eventID"><br><br>
-			<input type = "button" value = "Search"/ onclick=>
+			<input type = "button" value = "Search" onclick=>
 		</form>
         
 	<!-- Delete Event -->
@@ -65,7 +65,7 @@ if ($_SESSION['LOGIN'] <> "")
 		<form method="get">
 			<b>Event ID:</b><br>
 			<input type="text" id="eventID"><br><br>
-			<input type = "button" value = "Search"/ onclick=>
+			<input type = "button" value = "Search" onclick=>
 		</form>
 <table>
 </table>
