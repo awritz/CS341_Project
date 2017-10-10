@@ -53,7 +53,7 @@ if ($_SESSION['LOGIN'] <> "")
 		</form>
         
 	<!-- Edit Event -->
-		<h1>Edit Event</h1>
+		<h1>Edit An Event</h1>
 		<form method="get">
 			<b>Event ID:</b><br>
 			<input type="text" id="eventID"><br><br>
@@ -61,10 +61,24 @@ if ($_SESSION['LOGIN'] <> "")
 		</form>
         
 	<!-- Delete Event -->
-		<h1>Add Event</h1>
+		<h1>Delete An Event</h1>
 		<form method="get">
 			<b>Event ID:</b><br>
 			<input type="text" id="eventID"><br><br>
+			<input type = "button" value = "Search" onclick=>
+		</form>
+        
+        <!-- Initialize Program Manager List with empty set of program managers -->
+		<h1>Create a New Program Manager List</h1>
+		<form>
+			<input type="button" value="New Program Manager List" onclick=>
+		</form>
+        
+        <!-- Program Manager Search -->
+		<h1>Search for a Program Manager</h1>
+		<form method="get">
+			<b>Program Manager Email Address:</b><br>
+			<input type="text" id="programManagerEmail"><br><br>
 			<input type = "button" value = "Search" onclick=>
 		</form>
 <table>
