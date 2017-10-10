@@ -45,8 +45,13 @@ if ($_SESSION['LOGIN'] <> "")
   
 </script>
   
+	<h1>My Events</h1>
 <table>
 </table>
+	
+	<h2>Upcoming Events</h2>
+<table>
+		</table>
 
 </body>
 
