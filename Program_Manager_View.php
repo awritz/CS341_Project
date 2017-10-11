@@ -18,6 +18,9 @@ if ($_SESSION['LOGIN'] <> "")
 <html>
 <head>
 <title>VOLUNTEER Member List</title>
+<style type="text/css">
+     //add CSS code here
+ </style>
 </head>
 
 <BODY BGCOLOR="#000000" TEXT="#FF6600">
@@ -64,7 +67,7 @@ if ($_SESSION['LOGIN'] <> "")
 		<form method="post">
 			<b>Event ID:</b><br>
 			<input type="text" id="eventID"><br><br>
-			<input type = "button" value = "Search">
+			<input type = "button" value = "Delete">
 		</form>
         
         <!-- Initialize Program Manager List with empty set of program managers
