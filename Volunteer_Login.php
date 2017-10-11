@@ -19,6 +19,12 @@ if ($_SESSION['LOGIN'] <> "")
 <link rel="stylesheet" type="text/css" href="style.css> <--!CSS extension-->
 <head>
 <title>VOLUNTEER Member List</title>
+<style>
+img {
+    display: block;
+    margin: 0 auto;
+}
+</style>
 </head>
 
 <BODY BGCOLOR="#000000" TEXT="#FF6600">
@@ -29,9 +35,6 @@ if ($_SESSION['LOGIN'] <> "")
   <tr><td COLSPAN="2" WIDTH="598">
       <hr color='#FF6600' ALIGN='left'>
   </td></tr>
-  
-<table>
-</table>
 
 <form action="redirect.php" method="post">
 			<div class="imgcontainer">
