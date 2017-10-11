@@ -49,6 +49,8 @@ if ($_SESSION['LOGIN'] <> "")
 		<form method="get">
 			<b>Event ID:</b><br>
 			<input type="text" id="eventID"><br><br>
+            <b>Event Date:</b><br>
+            <input type="datetime-local" name="eventDate"><br></br>
 			<input type = "submit" value = "Submit" onclick=>
 		</form>
         
