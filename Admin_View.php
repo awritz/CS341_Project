@@ -18,8 +18,9 @@ if ($_SESSION['LOGIN'] <> "")
 <html>
 <head>
 <title>VOLUNTEER Member List</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
+<div class = "center">
 <BODY BGCOLOR="#000000" TEXT="#FF6600">
 <table border="0" cellpadding="0" cellspacing="0" width="600">
   <tr><td WIDTH="112" HEIGHT="112"><IMG BORDER="0" SRC="images/basketball.png" WIDTH="157" HEIGHT="123">
@@ -169,11 +170,8 @@ if ($_SESSION['LOGIN'] <> "")
 		<h1>Send Email for Latest Schedule of Events</h1>
 		<form method="post">
 			<input type = "submit" value = "Submit"/>
-		</form>
-
-  
-  
-  
+	</form>
+	</div>
   
 <script Language="php"> 
 
