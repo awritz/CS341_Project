@@ -80,8 +80,8 @@ if ($_SESSION['LOGIN'] <> "")
 		<h1>Search for a Program Manager</h1>
 		<form method="get">
 			<b>Program Manager Email Address:</b><br>
-			<input type="text" id="programManagerEmail"><br><br>
-			<input type = "button" value = "Search" onclick=>
+			<input type="search" id="programManagerEmail"><br><br>
+			<input type = "submit" value = "Search">
 		</form>
 <table>
 </table>
