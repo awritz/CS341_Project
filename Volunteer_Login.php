@@ -16,6 +16,7 @@ if ($_SESSION['LOGIN'] <> "")
 </script>
 
 <html>
+<link rel="stylesheet" type="text/css" href="style.css> <--!CSS extension-->
 <head>
 <title>VOLUNTEER Member List</title>
 </head>
