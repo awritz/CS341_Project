@@ -23,7 +23,7 @@ if ($_SESSION['LOGIN'] <> "")
 <BODY BGCOLOR="#000000" TEXT="#FF6600">
 <table border="0" cellpadding="0" cellspacing="0" width="600">
   <tr><td WIDTH="112" HEIGHT="112"><IMG BORDER="0" SRC="images/basketball.png" WIDTH="157" HEIGHT="123">
-  </td><td WIDTH="479" HEIGHT="112"><FONT SIZE="4">Welcome to the Volunteer Society.</FONT>
+  </td><td WIDTH="479" HEIGHT="112"><FONT SIZE="4">Welcome to the Volunteer Application.</FONT>
   </td></tr>
   <tr><td COLSPAN="2" WIDTH="598">
       <hr color='#FF6600' ALIGN='left'>
