@@ -18,8 +18,12 @@ if ($_SESSION['LOGIN'] <> "")
 <html>
 <head>
 <title>VOLUNTEER Member List</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <div class = "center">
 <BODY BGCOLOR="#000000" TEXT="#FF6600">
 <table border="0" cellpadding="0" cellspacing="0" width="600">
@@ -35,9 +39,10 @@ if ($_SESSION['LOGIN'] <> "")
 	<input type = "submit" value = "Logout" style="position: fixed; top: 10px; right: 10px; border: 10;">
   </form>
   
-		<!-- Add volunteer -->
-		<h1>Add Volunteer</h1>
-		<form method="post">
+		<div class="container">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#addV">Add Volunteer</button>
+  <div id="addV" class="collapse">
+    <form id="addVolunteer" method="post">
 			<b>First Name:</b><br>
 			<input type="text" id="firstName" name = "admin_vol_add_firstname"><br><br>
 			<b>Last Name:</b><br>
@@ -65,18 +70,27 @@ if ($_SESSION['LOGIN'] <> "")
 			<input type="password" name="admin_vol_add_psw"><br><br>
 			<input type = "submit" value = "Submit" name = "admin_vol_add_submit"/>
 		</form>
+  </div>
+</div>
   </tr>
-  <!-- Delete volunteer -->
-		<h1>Delete Volunteer</h1>
-		<form method="post">
+  
+  <!-------Delete Volunteer -->
+  <div class="container">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#deleteV">Delete Volunteer</button>
+  <div id="deleteV" class="collapse">
+  <form id="deleteVolunteer" method="post">
 			<b>School E-mail:</b>
 			<input type="email" name="email"> <br> <br>
 			<input type = "submit" value = "Submit"/>
 		</form>
+  </div>
+</div>
 		
-	<!-- Edit volunteer -->
-		<h1>Edit Volunteer</h1>
-		<form method="get">
+<!-- Edit volunteer -->
+	<div class="container">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#editV">Edit Volunteer</button>
+  <div id="editV" class="collapse">
+		<form id ="editVolunteer" method="get">
 			<b>First Name:</b><br>
 			<input type="text" id="firstName"><br><br>
 			<b>Last Name:</b><br>
@@ -104,10 +118,13 @@ if ($_SESSION['LOGIN'] <> "")
 			<input type="password" name="psw"><br><br>
 			<input type = "submit" value = "Submit"/>
 		</form>
-	
+		</div></div>
+		
 	<!-- Add program manager -->
-		<h1>Add Program Manager</h1>
-		<form method="post">
+	<div class="container">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#addPM">Add Program Manager</button>
+  <div id="addPM" class="collapse">
+		<form id="addProgramManager" method="post">
 			<b>First Name:</b><br>
 			<input type="text" id="firstName" name = "admin_pm_add_firstname"><br><br>
 			<b>Last Name:</b><br>
@@ -136,10 +153,13 @@ if ($_SESSION['LOGIN'] <> "")
 			<input type="password" name="admin_pm_add_psw"><br><br>
 			<input type = "submit" value = "Submit" name = "admin_pm_add_submit"/>
 		</form>
+		</div></div>
 		
 	<!-- Edit program manager -->
-		<h1>Edit Program Manager</h1>
-		<form method="post">
+	<div class="container">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#editPM">Edit Program Manager</button>
+  <div id="editPM" class="collapse">
+		<form id="editProgramManager" method="post">
 			<b>First Name:</b><br>
 			<input type="text" id="firstName"><br><br>
 			<b>Last Name:</b><br>
@@ -157,20 +177,24 @@ if ($_SESSION['LOGIN'] <> "")
 			<input type="password" name="psw"><br><br>
 			<input type = "submit" value = "Submit"/>
 		</form>
+		</div></div>
 		
 	<!-- Delete program manager -->
-		<h1>Delete Program Manager</h1>
-		<form method="post">
+	<div class="container">
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#deletePM">Delete Program Manager</button>
+  <div id="deletePM" class="collapse">
+		<form id="deleteProgramManager" method="post">
 			<b>School E-mail:</b>
 			<input type="email" name="email"> <br> <br>
 			<input type = "submit" value = "Submit"/>
 		</form>
+		</div></div>
 	
 	<!-- Send email -->
-		<h1>Send Email for Latest Schedule of Events</h1>
-		<form method="post">
-			<input type = "submit" value = "Submit"/>
-	</form>
+			<form id="sendEmail" method="post">
+			<button type="button" class="btn btn-primary">Send Email</button>
+		</form>
+
 	</div>
   
 <script Language="php"> 
